@@ -2,12 +2,13 @@ spring:
   application:
       name: license-config-server
   profiles:
-      active: native
-#  cloud:
-#      config:
-#        server:
-#          native:
-#            search-locations: classpath:/config
-#          bootstrap: false
+      active: native,git
+  cloud:
+      config:
+        server:
+          native:
+            search-locations: classpath:/config
+            git:
+          searchPaths: licensingservice
 server:
   port: 8071
