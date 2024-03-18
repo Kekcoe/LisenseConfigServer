@@ -8,7 +8,9 @@ spring:
         server:
           native:
             search-locations: classpath:/config
-            git: https://github.com/Kekcoe/config.git
-          searchPaths: licensingservice
+          git:
+            uri: https://github.com/Kekcoe/config.git
+            defaultLabel: master
+            searchPaths: licensingservice
 server:
   port: 8071
